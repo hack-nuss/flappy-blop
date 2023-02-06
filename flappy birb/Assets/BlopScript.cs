@@ -23,6 +23,11 @@ public class BlopScript : MonoBehaviour
             MyRigidbody.velocity = Vector2.up * flapStregth;
         }
 
+        if (Input.GetButtonDown("Fire1") && birdIsAlive)
+        {
+            Debug.Log(Input.mousePosition);
+            MyRigidbody.velocity = Vector2.up * flapStregth;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
